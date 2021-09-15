@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+</head>
+
+<body>
+
+	<section id="emailSection" class="col-xs-12">
+
+		<strong class="col-xs-12 text-center">Sua contribuição é muito importante para nós</strong>
+
+		<div id="containerEmail" class="container col-xs-12">
+
+			<div id="emailContainer" class="col-xs-12">
+
+				<i id="targetIcon" class="fa fa-share" aria-hidden="true"></i>
+				<strong>Envie aqui sua feature e seus casos de testes no formato Gherkin</strong>
+				<hr>
+				<br>
+				<div>
+					<p>
+
+						<b>Digite seu nome, email para contato, o nome da feature e no último campo, seus casos de
+							testes no formato <a
+							href="https://cucumber.io/docs/gherkin/" target="_blank">Gherkin</a> utilizado no BDD -
+						Behavior Driven Development</b>
+
+					</p>
+				</div>
+
+				<div class="content">
+					<form id="form1" method="POST" action="https://formspree.io/f/mwkarkno">
+						<input type="text" class="field obrigatorios" name="Nome" placeholder="Nome" required>
+						<input type="email" class="field obrigatorios" name="Email" placeholder="E-mail" required>
+						<input type="text" class="field obrigatorios" name="Nome da feature" placeholder="Nome da feature" required>
+						<textarea id="textAreaCasosDeTestes" class="field" name="Casos de testes" placeholder="Casos de testes em Gherkin" required></textarea>
+						<input id="botaoEnviarFeature" class="field" type="submit" value="Enviar" disabled>
+						<p id="my-form-status" class="text-center"></p>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	<script src="js/efeitosMenuEScroll.js"></script>
+	<script src="js/envioEmail.js"></script>
+					</body>
+					</html>

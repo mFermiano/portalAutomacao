@@ -1,0 +1,186 @@
+/* FONTES */
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+
+}
+@font-face {
+	font-family: 'SansSerif';
+	src: url("../fonts/Sans-Serif/Sans-Serif.ttf");
+
+}
+
+/* HEADER */
+
+header {
+ width: 100%;
+ height: 10.4rem;
+ background-color: rgba(85 84 84 / 98%);
+ z-index: 999;
+ position: fixed;
+ margin-bottom: 3rem;
+ display: flex;
+
+}
+
+header #containerTitulo {
+    width: 100%;
+    position: absolute;
+}
+
+#bannerKonvivaFundo{
+ position: fixed;
+ width: 100%;
+ filter: opacity(0.15);
+ -moz-opacity:0.15;
+ top:0.8rem;
+}
+
+#bannerKonvivaFundo img {
+ width: 40%;
+}
+
+img#imagemIlog {
+  height: 3.4rem;
+}
+
+header h1{
+ padding: 0;
+ margin: 0;
+ top: 0.7rem;
+ left: 3rem;
+}
+header h2{
+ font-family: "OpenSans";
+ color: rgba(245, 245, 245,0.9);
+ font-size: 1.4rem;
+ top: 0.4rem;
+ text-align: center;
+ left: 4rem;
+}
+
+header #menu{
+width: 100%;
+    height: 4.4rem;
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    top: 6rem;
+    color: #BDC3C7;
+    object-position: bottom;
+    padding: 0rem;
+    background: #6b4a6880;
+
+}
+
+#menu:after {
+    content: '';
+    display: none;
+    position: absolute;
+    /*left: 11rem;*/
+    bottom: 0%;
+    width: 0;
+    height: 0;
+    border-bottom: 0.6rem solid #f1ecec;
+    border-top: 0.6rem solid transparent;
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+}
+
+#menu.homePage:after{
+transition: all 250ms linear;
+display: block;
+left: 20rem;
+}
+
+#menu.instrucoesPage:after{
+transition: all 250ms linear;
+display: block;
+left: 51rem;
+}
+
+#menu.featuresPage:after{
+transition: all 250ms linear;
+display: block;
+left: 82rem;
+}
+
+#menu.sugestoesPage:after{
+transition: all 250ms linear;
+display: block;
+left: 112rem;
+}
+
+header #menu ul{
+display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header #menu button {
+    cursor: pointer;
+    border-radius: 2rem;
+    font-weight: 400;
+    max-width: 21rem;
+    position: relative;
+    text-decoration: none;
+    background-color: rgba(85 84 84 / 0%);
+}
+
+header #menu a{
+
+    /* border: 1px solid goldenrod; */
+    border-radius: 2rem;
+    display: inline-flex;
+    /* box-shadow: 3px 2px 2px #555; */
+    font-family: "OpenSans";
+    color: rgb(245, 245, 245,0.9);
+    /* background: rgb(151 85 147/50%); */
+    margin-bottom: 0rem;
+    text-align: center;
+    height: 3rem;
+    width: 20rem;
+    font-size: 1.02rem;
+    transition: all 30ms linear;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+header #menu a i{
+  margin-left: 10px;
+}
+
+header #menu a:hover {
+  /*background: rgb(95 60 92 / 80%);
+  border: 1px solid #555;
+  box-shadow: inset 3px 2px 2px #323232;
+  color: #AAA;*/
+  text-decoration: none;
+  /*text-shadow: #d6c6d5;
+  transition: all 250ms linear;*/
+  font-size: 1.1rem;
+
+}
+
+header #menu .fa{
+ margin: 1rem;
+ font-size: 1rem;
+}
+
+.col-xs-12 {
+  width: 100%;
+  margin-right: 0rem;
+  margin-left: 0rem;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
+
+.menuFixo {
+  position: fixed;
+  top: 0px;
+  background-color: #ccf;
+}

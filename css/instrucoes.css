@@ -1,0 +1,202 @@
+/* FONTES */
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+
+}
+@font-face {
+	font-family: 'SansSerif';
+	src: url("../fonts/Sans-Serif/Sans-Serif.ttf");
+
+}
+
+
+/* BODY */
+
+body{
+
+	background-color: #f1ecec;
+	width: 100%;
+	font-size: 1.4rem;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+
+/* SECTION */
+
+section#welcomeSection{
+	position: relative;
+	width: 100%;
+	font-family: "OpenSans";
+	font-size: 1.4rem;
+	height: 25rem;
+	margin-bottom: 55rem;
+	top: 18rem;
+}
+
+
+section#welcomeSection #containerWelcome{
+	position: relative;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+
+section#welcomeSection #targetIcon{
+	font-size: 2.2rem;
+	padding-right: 1.5rem;
+}
+
+section strong {
+	font-size: 2rem;
+	color: black;
+}
+
+
+section#welcomeSection #objetivoContainer{
+	background-color: rgb(68 66 66/92%);
+	background-image: url(../img/fundoInstrucoes.png);
+	box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+	position: relative;
+	padding: 6.5rem;
+	margin-top: 10rem;
+	margin-bottom: 12rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: black;
+}
+
+section#videoSection{
+	position: relative;
+	width: 100%;
+	font-family: "OpenSans";
+	font-size: 1.4rem;
+	height: 17rem;
+	margin-bottom: 50rem;
+}
+
+section#videoSection #videoContainer{
+	background-color: rgb(106 74 104 / 93%);
+	box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+	position: relative;
+	padding: 6.5rem;
+	margin-top: 9rem;
+	margin-bottom: 33rem;
+	color: black;
+	background-image: url(../img/ideia4.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+
+section#videoSection #videoIcon{
+	font-size: 2.2rem;
+	padding-right: 1.5rem;
+}
+#videoContainer strong{
+	font-size: 2rem;
+	color: black;
+	font-weight: bolder;
+}
+
+
+section#videoSection #video{
+
+	position: relative;
+	margin: 0rem;
+	margin-top: 5rem;
+}
+section#videoSection video {
+	width: 50%;
+}
+
+
+
+strong.col-xs-12.text-center {
+	color: rgb(138 94 134);
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+/* TITULO TECNOLOGIAS */
+
+section#tecnologiasSection {
+
+	position: relative;
+	margin-bottom: 13rem;
+}
+
+#containerTecnologias{
+
+	position: relative;
+	top: 1rem;
+	background-color: rgba(245, 245, 245,0.9);
+	padding: 2rem;
+
+}
+
+section#tituloTecnologias strong{
+	color: rgba(61, 107, 146,1);
+	font-size: 2rem;
+	font-weight: bolder;
+
+}
+
+section hr {
+	margin-top: 1.5rem;
+	margin-bottom: -0.3rem;
+	border: 0;
+	border-top: 0.04rem solid goldenrod;
+}
+
+section .row {
+	margin-right: 0rem;
+	margin-left: 0rem;
+}
+
+/* BANNER */
+
+section#tituloTecnologias .carroselSection{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-top: 2rem;
+}
+
+section #carrosel1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	top: 9rem;
+}
+
+section .owl-threme .owl-nav {
+	margin-top: 0rem;
+	position: relative;
+}
+
+section .owl-theme .owl-nav.disabled+.owl-dots {
+	margin-top: 9rem;
+}
+
+#sugestaoIcon{
+	font-size: 2.2rem;
+	padding-right: 1.5rem;
+}

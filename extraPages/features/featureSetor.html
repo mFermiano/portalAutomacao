@@ -1,0 +1,132 @@
+<meta charset="utf-8" xmlns="http://www.w3.org/1999/html">
+<style>
+	/* FONTES */
+
+	@font-face {
+		font-family: 'OpenSans';
+		src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+
+	}
+	@font-face {
+		font-family: 'SansSerif';
+		src: url("../fonts/Sans-Serif/Sans-Serif.ttf");
+
+	}
+
+	html, body {
+		width: 100%;
+		height: 100%;
+		display: block;
+		font-family: "OpenSans";
+		text-align: justify;
+
+	}
+
+	div#containerFeatures {
+        font-size: 1.2rem;
+        padding: 3rem;
+    }
+
+
+    #containerFeatures strong{
+      color: rgb(204,120,50);
+      font-size: 1.3rem;
+  }
+
+  b{
+      color: rgba(41,123,181,1);
+      font-size: 1.3rem;
+  }
+
+  .textCases{
+      margin-left:1.3rem;
+  }
+
+
+</style>
+
+<body>
+    <div id="containerFeatures" class="col-xs-12">
+        <p>
+            <strong class="titleFeature">Funcionalidade:</strong> Cadastrar um setor
+        </p>
+
+        <div>
+
+            <p>
+                <strong class="titleFeature">Contexto:</strong>
+                <br>
+            </p>
+            <p class="textCases">
+                <strong>Dado </strong>que o usuário <b>"LOGIN_SUPORTE_AUTOMACAO"</b> realiza o login na plataforma
+                <br>
+                <strong>Quando </strong>o usuário acessa ao módulo <b>"USUARIOS"</b>
+                <br>
+                <strong>E </strong>acessar o menu <b>"SETORES"</b>
+                <br>
+            </p>
+
+
+            <p>
+                <strong class="titleFeature">Cenário:</strong> Realizar cadastro de um novo setor
+                <br>
+            </p>
+
+            <p class="textCases">
+                <strong>E</strong> clicar em botão de cadastro ADICIONAR
+                <br>
+                <strong>E</strong> preenche os campos
+                <br>
+                <strong>E</strong> clicar em salvar
+                <br>
+                <strong>Entao</strong> sistema deve haver criado um novo registro
+                <br>
+                <strong>E</strong> realiza a busca simples pelo nome do registro
+                <br>
+                <strong>E</strong> clicar no botao editar
+                <br>
+                <strong>E</strong> começa a validação dos dados do registro configurado
+                <br>
+            </p>
+
+
+            <strong class="titleFeature">Cenário:</strong> Atualizar Setor
+            <br>
+
+            <p class="textCases">
+                <strong>E</strong> realiza a busca simples pelo nome do registro
+                <br>
+                <strong>E</strong> clicar no botao editar
+                <br>
+                <strong>E</strong> altera os valores preenchidos
+                <br>
+                <strong>E</strong> clicar em salvar
+                <br>
+                <strong>Entao</strong> sistema deve haver editado o registro
+                <br>
+                <strong>E</strong> realiza a busca simples pelo nome do registro editado
+                <br>
+                <strong>E</strong> clicar no botao editar
+                <br>
+                <strong>E</strong> começa a validação dos dados do registro editado
+                <br>
+            </p>
+
+
+            <strong class="titleFeature">Cenário:</strong> Deletar Setor
+            <br>
+
+            <p class="textCases">
+                <strong>E</strong> realiza a busca simples pelo nome do registro editado
+                <br>
+                <strong>E</strong> clicar no botao excluir
+                <br>
+                <strong>E</strong> clicar no botão sim
+                <br>
+                <strong>Entao</strong> sistema deve haver deletado o registro
+                <br>
+            </p>
+
+        </div>
+    </div>
+</body>

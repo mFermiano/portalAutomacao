@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="21.447">
+<testcase classname="Cadastrar um cargo" name="Realizar cadastro de um novo cargo" time="7.404">
+<system-out><![CDATA[Dado que o usuário "LOGIN_SUPORTE_AUTOMACAO" realiza o login na plataforma..passed
+Quando o usuário acessa ao módulo "USUARIOS"................................passed
+E acessar o menu "CARGOS"...................................................passed
+E clicar em botão de cadastro ADICIONAR.....................................passed
+E preenche todos campos.....................................................passed
+E clicar em salvar..........................................................passed
+Então sistema deve haver criado um novo registro............................passed
+E realiza a busca simples pelo nome do registro.............................passed
+E clicar no botao editar....................................................passed
+E começa a validação dos dados do registro configurado......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Cadastrar um cargo" name="Atualizar Cargo" time="8.036">
+<system-out><![CDATA[Dado que o usuário "LOGIN_SUPORTE_AUTOMACAO" realiza o login na plataforma..passed
+Quando o usuário acessa ao módulo "USUARIOS"................................passed
+E acessar o menu "CARGOS"...................................................passed
+E realiza a busca simples pelo nome do registro.............................passed
+E clicar no botao editar....................................................passed
+E altera os valores preenchidos.............................................passed
+E clicar em salvar..........................................................passed
+Então sistema deve haver editado o registro.................................passed
+E realiza a busca simples pelo nome do registro editado.....................passed
+E clicar no botao editar....................................................passed
+E começa a validação dos dados do registro editado..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Cadastrar um cargo" name="Deletar Cargo" time="5.99">
+<system-out><![CDATA[Dado que o usuário "LOGIN_SUPORTE_AUTOMACAO" realiza o login na plataforma..passed
+Quando o usuário acessa ao módulo "USUARIOS"................................passed
+E acessar o menu "CARGOS"...................................................passed
+E realiza a busca simples pelo nome do registro editado.....................passed
+E clicar no botao excluir...................................................passed
+E clicar no botão sim.......................................................passed
+Então sistema deve haver deletado o registro................................passed
+]]></system-out>
+</testcase>
+</testsuite>

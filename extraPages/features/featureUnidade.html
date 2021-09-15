@@ -1,0 +1,193 @@
+<meta charset="utf-8" xmlns="http://www.w3.org/1999/html">
+<style>
+	/* FONTES */
+
+	@font-face {
+		font-family: 'OpenSans';
+		src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+
+	}
+	@font-face {
+		font-family: 'SansSerif';
+		src: url("../fonts/Sans-Serif/Sans-Serif.ttf");
+
+	}
+
+	html, body {
+		width: 100%;
+		height: 100%;
+		display: block;
+		font-family: "OpenSans";
+		text-align: justify;
+
+	}
+
+	div#containerFeatures {
+        font-size: 1.2rem;
+        padding: 3rem;
+    }
+
+
+    #containerFeatures strong{
+      color: rgb(204,120,50);
+      font-size: 1.3rem;
+  }
+
+  b{
+      color: rgba(41,123,181,1);
+      font-size: 1.3rem;
+  }
+
+  .textCases{
+      margin-left:1.3rem;
+  }
+
+
+</style>
+
+<body>
+    <div id="containerFeatures" class="col-xs-12">
+        <p>
+            <strong class="titleFeature">Funcionalidade:</strong> Unidade
+        </p>
+
+        <div>
+
+            <p>
+                <strong class="titleFeature">Contexto:</strong>
+                <br>
+            </p>
+            <p class="textCases">
+                <strong>Dado </strong>que o usuário <b>"LOGIN_SUPORTE_AUTOMACAO"</b> realiza o login na plataforma
+                <br>
+                <strong>Quando </strong>o usuário acessa ao módulo <b>"USUARIOS"</b>
+                <br>
+                <strong>E </strong>acessar o menu <b>"UNIDADES"</b>
+                <br>
+            </p>
+
+
+            <p>
+                <strong class="titleFeature">Cenário:</strong> Realizar cadastro de uma nova unidade
+                <br>
+            </p>
+
+            <p class="textCases">
+                <strong>E</strong> clicar em botão de cadastro ADICIONAR
+                <br>
+                <strong>E</strong> preenche os campos da unidade
+                <br>
+                <strong>E</strong> clicar em salvar
+                <br>
+                <strong>Entao</strong> sistema deve haver criado um novo registro
+                <br>
+                <strong>E</strong> realiza a busca simples pelo nome da unidade
+                <br>
+                <strong>E</strong> clicar no botao editar unidade
+                <br>
+                <strong>E</strong> começa a validação dos dados do registro configurado na unidade
+                <br>
+            </p>
+
+
+            <strong class="titleFeature">Cenário:</strong> Realizar atualização de uma unidade no sistema
+            <br>
+
+            <p class="textCases">
+                <strong>E</strong> realiza a busca simples pelo nome da unidade
+                <br>
+                <strong>E</strong> clicar no botao editar unidade
+                <br>
+                <strong>E</strong> altera os valores preenchidos nos campos da unidades
+                <br>
+                <strong>E</strong> clicar em salvar
+                <br>
+                <strong>Entao</strong> realiza a busca simples pelo nome da unidade
+                <br>
+                <strong>E</strong> clicar no botao editar unidade
+                <br>
+                <strong>E</strong> começa a validação dos dados do registro configurado na unidade
+                <br>
+            </p>
+
+
+            <strong class="titleFeature">Cenário:</strong> Realizar cadastro de uma subunidade
+            <br>
+
+            <p class="textCases">
+                <strong>E</strong> realiza a busca simples pelo nome da unidade
+                <br>
+                <strong>E</strong> clicar em botão de cadastro ADICIONAR_SUBUNIDADE
+                <br>
+                <strong>E</strong> preenche os campos da subunidade
+                <br>
+                <strong>E</strong> clicar em salvar
+                <br>
+                <strong>Entao</strong> realiza a busca simples pelo nome da unidade
+                <br>
+                <strong>E</strong> clicar no botao editar unidade
+                <br>
+                <strong>E</strong> começa a validação dos dados do registro configurado na unidade
+                <br>
+            </p>
+
+            <strong class="titleFeature">Cenário:</strong> Realizar atualização de uma subunidade no sistema
+            <br>
+
+            <p class="textCases">
+                <strong>E</strong> realiza a busca simples pelo nome da subunidade
+                <br>
+                <strong>E</strong> clicar no botao editar unidade
+                <br>
+                <strong>E</strong> altera os valores preenchidos nos campos da subunidades
+                <br>
+                <strong>E</strong> clicar em salvar
+                <br>
+                <strong>Entao</strong> realiza a busca simples pelo nome da unidade
+                <br>
+                <strong>E</strong> clicar no botao editar unidade
+                <br>
+                <strong>E</strong> começa a validação dos dados do registro configurado na unidade
+                <br>
+            </p>
+
+            <strong class="titleFeature">Cenário:</strong> Mover subunidade para raiz
+            <br>
+
+            <p class="textCases">
+                <strong>E</strong> realiza a busca simples pelo nome da subunidade
+                <br>
+                <strong>E</strong> move unidade para raiz
+                <br>
+                <strong>Entao</strong> verifica a hierarquia
+                <br>
+            </p>
+
+
+            <strong class="titleFeature">Cenário:</strong> Transformar unidade raiz em subunidade
+            <br>
+
+            <p class="textCases">
+                <strong>E</strong> realiza a busca simples pelo nome da unidade
+                <br>
+                <strong>E</strong> move unidade raiz para outra unidade
+                <br>
+                <strong>Entao</strong> unidade deve ser uma subunidade
+                <br>
+            </p>
+
+            <strong class="titleFeature">Cenário:</strong> Deletar subunidade
+            <br>
+
+            <p class="textCases">
+                <strong>E</strong> realiza a busca simples pelo nome da subunidade
+                <br>
+                <strong>E</strong> clicar em deletar unidade
+                <br>
+                <strong>Entao</strong> a unidade deve ser excluida
+                <br>
+            </p>
+
+        </div>
+    </div>
+</body>

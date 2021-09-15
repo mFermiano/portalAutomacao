@@ -1,0 +1,52 @@
+/* FONTES */
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+
+}
+@font-face {
+	font-family: 'SansSerif';
+	src: url("../fonts/Sans-Serif/Sans-Serif.ttf");
+
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-family: "OpenSans";
+	text-align: justify;
+
+}
+
+div#containerFeatures {
+	font-size: 1.2rem;
+	padding: 3rem;
+}
+
+
+#containerFeatures strong{
+	color: rgb(204,120,50);
+	font-size: 1.3rem;
+}
+
+b{
+	color: rgba(41,123,181,1);
+	font-size: 1.3rem;
+}
+
+.textCases{
+	margin-left:1.3rem;
+}
+
+.status {
+	left: 43rem;
+	position: absolute;
+	color: black;
+	font-weight: lighter;
+}
+
+i.fa.fa-check-circle {
+	color: green;
+}

@@ -1,0 +1,190 @@
+/* FONTES */
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+
+}
+@font-face {
+	font-family: 'SansSerif';
+	src: url("../fonts/Sans-Serif/Sans-Serif.ttf");
+
+}
+
+
+/* BODY */
+
+body{
+
+	background-color: #f1ecec;
+	width: 100%;
+	font-size: 1.4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+/* SECTION */
+
+section#emailSection{
+	position: relative;
+	width: 100%;
+	font-family: "OpenSans";
+	font-size: 1.4rem;
+	color: whitesmoke;
+	height: 58rem;
+	margin-bottom: 50rem;
+	top: 20rem;
+}
+
+
+section#emailSection #containerEmail{
+	position: relative;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+
+section#emailSection #targetIcon{
+	font-size: 2.2rem;
+	padding-right: 1.5rem;
+}
+
+section strong{
+	font-size: 2rem;
+	color: whitesmoke;
+	font-weight: bolder;
+}
+
+section#emailSection #emailContainer{
+	background-color: rgb(120 86 117);
+	box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+	position: relative;
+	padding: 5rem;
+	margin-top: 10rem;
+	margin-bottom: 12rem;
+	height: 66rem;
+}
+
+
+strong.col-xs-12.text-center {
+	color: rgb(138 94 134);
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+section hr {
+	margin-top: 1.5rem;
+	margin-bottom: -0.3rem;
+	border: 0;
+	border-top: 0.04rem solid goldenrod;
+}
+
+section .row {
+	margin-right: 0rem;
+	margin-left: 0rem;
+}
+
+.content{
+	display:flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+#form1{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin-top: 2rem;
+}
+
+.field{
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	font-family: sans-serif;
+	font-size: 1.1rem;
+	color: grey;
+	max-width: 130ch;
+}
+
+textarea{
+	height:150px;
+	resize: none;
+}
+
+textarea.field {
+	height: 31ch;
+	max-width: 130ch;
+	overflow: unset;
+}
+
+b, strong {
+	font-weight: 400;
+}
+
+input#botaoEnviarFeature {
+	border: 1px solid goldenrod;
+	border-radius: 2rem;
+	display: inline-flex;
+	box-shadow: 3px 2px 2px #555;
+	font-family: "OpenSans";
+	color: rgb(245, 245, 245,0.9);
+	background: rgb(151 85 147/50%);
+	margin-bottom: 0rem;
+	text-align: center;
+	margin-top: 2rem;
+	height: 3rem;
+	width: 40%;
+	font-size: 1.02rem;
+	transition: all 30ms linear;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+}
+
+input#botaoEnviarFeature[disabled] {
+	opacity: 0.2;
+}
+input#botaoEnviarFeature:not([disabled]):hover {
+
+	background: rgb(95 60 92 / 80%);
+	border: 1px solid #555;
+	box-shadow: inset 3px 2px 2px #323232;
+	color: #AAA;
+	text-decoration: none;
+	text-shadow: #d6c6d5;
+	transition: all 250ms linear;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+
+}
+
+#emailContainer a{
+color: #81b0d8;
+    font-weight: 600;
+}
+
+#emailContainer a:focus, a:hover {
+	color: #337ab7;
+	text-decoration: underline;
+}
+
+p#my-form-status {
+	margin-top: 38.5rem;
+	position: absolute;
+	align-self: center;
+}
