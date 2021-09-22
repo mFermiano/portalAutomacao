@@ -117,3 +117,9 @@ div#video2 {
 	position: relative;
 
 }
+
+iframe {
+    width: 50%;
+    height: 34rem;
+    border: none;
+}
