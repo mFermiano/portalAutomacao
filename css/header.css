@@ -21,7 +21,6 @@ header {
  position: fixed;
  margin-bottom: 3rem;
  display: flex;
-
 }
 
 header #containerTitulo {
@@ -74,79 +73,43 @@ width: 100%;
 
 }
 
-#menu:after {
-    content: '';
-    display: none;
-    position: absolute;
-    /*left: 11rem;*/
-    bottom: 0%;
-    width: 0;
-    height: 0;
-    border-bottom: 0.6rem solid #f1ecec;
-    border-top: 0.6rem solid transparent;
-    border-left: 0.6rem solid transparent;
-    border-right: 0.6rem solid transparent;
-}
-
-#menu.homePage:after{
-transition: all 250ms linear;
-display: block;
-left: 20rem;
-}
-
-#menu.instrucoesPage:after{
-transition: all 250ms linear;
-display: block;
-left: 51rem;
-}
-
-#menu.featuresPage:after{
-transition: all 250ms linear;
-display: block;
-left: 82rem;
-}
-
-#menu.sugestoesPage:after{
-transition: all 250ms linear;
-display: block;
-left: 112rem;
-}
-
 header #menu ul{
 display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+
 }
 
 header #menu button {
-    cursor: pointer;
-    border-radius: 2rem;
-    font-weight: 400;
-    max-width: 21rem;
-    position: relative;
-    text-decoration: none;
-    background-color: rgba(85 84 84 / 0%);
+  cursor: pointer;
+  font-weight: 400;
+  max-width: 24rem;
+  position: relative;
+  text-decoration: none;
+  background-color: rgba(85 84 84 / 0%);
+  margin-left: 0.5rem;
+      margin-right: 0.5rem;
 }
 
 header #menu a{
 
-    /* border: 1px solid goldenrod; */
-    border-radius: 2rem;
-    display: inline-flex;
-    /* box-shadow: 3px 2px 2px #555; */
-    font-family: "OpenSans";
-    color: rgb(245, 245, 245,0.9);
-    /* background: rgb(151 85 147/50%); */
-    margin-bottom: 0rem;
-    text-align: center;
-    height: 3rem;
-    width: 20rem;
-    font-size: 1.02rem;
-    transition: all 30ms linear;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+ border: 1px solid goldenrod;
+ border-radius: 2rem;
+ display: inline-flex;
+ box-shadow: 3px 2px 2px #555;
+ font-family: "OpenSans";
+ color: rgb(245, 245, 245,0.9);
+ background: rgb(151 85 147/50%);
+ margin-bottom: 0rem;
+ text-align: center;
+ height: 3rem;
+ width: 20rem;
+ font-size: 1.02rem;
+ transition: all 30ms linear;
+ flex-direction: column;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-content: center;
 
 }
 
@@ -155,15 +118,15 @@ header #menu a i{
 }
 
 header #menu a:hover {
-  /*background: rgb(95 60 92 / 80%);
+  background: rgb(95 60 92 / 80%);
   border: 1px solid #555;
   box-shadow: inset 3px 2px 2px #323232;
-  color: #AAA;*/
+  color: #AAA;
   text-decoration: none;
-  /*text-shadow: #d6c6d5;
-  transition: all 250ms linear;*/
-  font-size: 1.1rem;
-
+  text-shadow: #d6c6d5;
+  transition: all 250ms linear;
+  font-size: 1.01rem;
+  
 }
 
 header #menu .fa{

@@ -98,50 +98,6 @@
                                     <fieldset class="grupo">
                                         <div class="campo">
 
-                                            <label for="ambientes">Ambientes disponíveis
-                                                <br>
-                                                <br>
-                                                <select name="ambientes" id="ambientes" required>
-                                                    <option disabled>Selecione um Ambiente</option>
-                                                    <option value="#setUrl">Digitar ambiente</option>
-                                                    <option value="#automacaoHomol" selected>https://automacao.homol.konviva.com.br</option>
-                                                    <option value="#qa">http://qa.konviva.com.br</option>
-                                                    <option value="#rcHomol">https://rc.homol.konviva.com.br</option>
-                                                </select>
-                                                <br><br>
-
-                                                <label id="urlLabel" for="setUrl">Url:<input type="text" id="setUrl" name="url" disabled></label>
-                                            </label>
-
-                                            <label for="usuario">Usuários disponíveis
-                                                <br>
-                                                <br>
-                                                <select name="usuario" id="usuario" required>
-                                                    <option disabled>Selecione um usuário</option>
-                                                    <option value="#setLogin">Digitar login e senha</option>
-                                                    <option value="#suporte.ilog" selected>Suporte padrão</option>
-                                                    <option value="#suporte.ilog.automacao">Suporte automação</option>
-                                                    <option value="#administrador.automacao">Administrador automação</option>
-                                                    <option value="#Automacao.ilog">Aluno automação</option>
-                                                </select>
-                                                <br><br>
-
-                                                <label id="loginLabel" for="setLogin">Login:<input type="text" id="setLogin" name="login" disabled></label>
-                                                <label id="passwordLabel" for="setPassword">Senha:<input type="password" id="setPassword" name="senha" disabled></label>
-                                            </label>
-
-                                            <label for="browsers">Navegadores disponíveis
-                                                <br>
-                                                <br>
-                                                <select name="browsers" id="browsers" required>
-                                                    <option disabled>Selecione um navegador</option>
-                                                    <option value="#chrome" selected>Google Chrome</option>
-                                                    <option value="#firefox">Mozilla Firefox</option>
-                                                    <option value="#ie">Internet Explorer</option>
-                                                    <option value="#edge">Microsoft Edge</option>
-                                                </select>
-                                            </label>
-
                                             <label for="modulos">Modulos disponíveis
                                                 <br>
                                                 <br>
@@ -153,7 +109,9 @@
                                                     <option value="#administracao">administracao</option>
                                                 </select>
                                             </label>
-
+                                            <br>
+                                            <br>
+                                            <br>
                                             <label for="features">Features disponíveis
                                                 <br>
                                                 <br>
@@ -183,12 +141,17 @@
                                                     </optgroup>
                                                 </select>
                                             </label>
+                                            <br>
+                                            <br>
 
                                         </div>
                                     </fieldset>
                                 </form>
                             </div>
-
+                            <div id="containerBotaoExecutar" class="container col-xs-12">
+                                <button title="Executar feature selecionada" id="botaoExecutar" onclick="move()" class="btn botaoFeature col-xs-12"
+                                data-video="vid/Konvivahd.mp4">EXECUTAR<i class="fa fa-rocket"></i></button>
+                            </div>
                         </div>
 
                         <br>
@@ -196,7 +159,6 @@
 
                         <div id="textCasesSection" class="container col-xs-10">
                             <strong class="col-xs-12 text-center">Cenários e casos de testes</strong>
-                            <br>
                             <br>
                             <div id="fieldsets">
                                 <fieldset class="fieldset" id="unidades">
@@ -219,14 +181,12 @@
                                 </fieldset>
                             </div>
 
-                            <div id="containerBotaoExecutar" class="container col-xs-12">
-                                <button title="Executar feature selecionada" id="botaoExecutar" onclick="move()" class="btn botaoFeature col-xs-12"
-                                        data-video="vid/Konvivahd.mp4">EXECUTAR<i class="fa fa-rocket"></i></button>
-                            </div>
 
                         </div>
                     </div>
 
+                    <br>
+                    <br>
                 </div>
             </div>
         </section>
@@ -398,12 +358,15 @@
 
                     </footer>
 
+
                     <script src="lib/jquery/jquery.min.js"></script>
                     <script src="lib/owl.carousel/dist/owl.carousel.min.js"></script>
                     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-                    <script src="js/efeitosMenuEScroll.js"></script>
+                    <script src="js/botaoPressionado.js"></script>
+                    <script src="js/scrollMenuFixo.js"></script>
+                    <script src="js/sideBar.js"></script>
                     <script src="js/carrosel.js"></script>
                     <script src="js/efeitosPageFeatures.js"></script>
-
+                    <script src="js/progressBar.js"></script>
                 </body>
                 </html>

@@ -1,33 +1,4 @@
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll > 50) {
-        $('#menu').css('display','none');
-        $('#menu').css('transition','all 250ms linear');
-        $('header').css('height','4.9rem');
-        $('#containerTitulo').css('display','none');
-        $('.page-wrapper').css('display','block');
-        $('#bannerKonvivaFundo img').css('width','18%');
-        $('#bannerKonvivaFundo').css('width','85%');
-        $('#bannerKonvivaFundo').css('filter','opacity(0.45)');
-        $('#bannerKonvivaFundo').css('transition','all 80ms linear');
-        $('.sidebar-wrapper').css('display','none');
-        $('#show-sidebar').css('display','block');
-
-    } else if (scroll < 50){
-        $('#menu').css('display','block');
-        $('header').css('height','10.4rem');
-        $('#bannerKonvivaFundo img').css('width','40%');
-        $('#bannerKonvivaFundo').css('filter','opacity(0.15)');
-        $('#bannerKonvivaFundo').css('width','100%');
-        $('#bannerKonvivaFundo').css('display','block');
-        $('#containerTitulo').css('display','block');
-        $('.page-wrapper').css('display','none');
-
-    }
-});
-
-$(window).on("load",function (){
+	$(window).on("load",function (){
 
 		var url = window.location.href;
 
@@ -72,22 +43,33 @@ $(window).on("load",function (){
 
 
 		if(resultHome == true){
-			/*botaoHome.style.background = 'rgb(95 60 92)';
+			botaoHome.style.background = 'rgb(95 60 92)';
 			botaoHome.style.border = '1px solid #555';
-			botaoHome.style.boxShadow = 'inset 3px 2px 2px #323232';*/
-			botaoHome.style.textShadow = '#d6c6d5';
+			botaoHome.style.boxShadow = 'inset 3px 2px 2px #323232';
 			botaoHome.style.color = '#AAA';
 			botaoHome.style.textDecoration = 'none';
+			botaoHome.style.textShadow = '#d6c6d5';
 			botaoHome.style.fontSize = '1.1rem';
 			botaoHomeSidebar.style.background = 'rgb(95 60 92 / 50%)';
 			iconeHomeSidebar.style.color = '#daa520';
 			iconeHomeSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
-			$("#menu").addClass("homePage");
+
+		} else if(resultKonviva == true){
+			botaoKonviva.style.background = 'rgb(95 60 92)';
+			botaoKonviva.style.border = '1px solid #555';
+			botaoKonviva.style.boxShadow = 'inset 3px 2px 2px #323232';
+			botaoKonviva.style.color = '#AAA';
+			botaoKonviva.style.textDecoration = 'none';
+			botaoKonviva.style.textShadow = '#d6c6d5';
+			botaoKonviva.style.fontSize = '1.1rem';
+			botaoKonvivaSidebar.style.background = 'rgb(95 60 92 / 50%)';
+			iconeKonvivaSidebar.style.color = '#daa520';
+			iconeKonvivaSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
 
 		} else if(resultInstrucoes == true){
-			/*botaoInstrucoes.style.background = 'rgb(95 60 92)';
+			botaoInstrucoes.style.background = 'rgb(95 60 92)';
 			botaoInstrucoes.style.border = '1px solid #555';
-			botaoInstrucoes.style.boxShadow = 'inset 3px 2px 2px #323232';*/
+			botaoInstrucoes.style.boxShadow = 'inset 3px 2px 2px #323232';
 			botaoInstrucoes.style.color = '#AAA';
 			botaoInstrucoes.style.textDecoration = 'none';
 			botaoInstrucoes.style.textShadow = '#d6c6d5';
@@ -95,12 +77,11 @@ $(window).on("load",function (){
 			botaoInstrucoesSidebar.style.background = 'rgb(95 60 92 / 50%)';
 			iconeInstrucoesSidebar.style.color = '#daa520';
 			iconeInstrucoesSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
-			$("#menu").addClass("instrucoesPage");
 
 		}else if(resultFeatures == true){
-			/*botaoFeatures.style.background = 'rgb(95 60 92)';
+			botaoFeatures.style.background = 'rgb(95 60 92)';
 			botaoFeatures.style.border = '1px solid #555';
-			botaoFeatures.style.boxShadow = 'inset 3px 2px 2px #323232';*/
+			botaoFeatures.style.boxShadow = 'inset 3px 2px 2px #323232';
 			botaoFeatures.style.color = '#AAA';
 			botaoFeatures.style.textDecoration = 'none';
 			botaoFeatures.style.textShadow = '#d6c6d5';
@@ -108,13 +89,11 @@ $(window).on("load",function (){
 			botaoFeaturesSidebar.style.background = 'rgb(95 60 92 / 50%)';
 			iconeFeaturesSidebar.style.color = '#daa520';
 			iconeFeaturesSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
-			$("#menu").addClass("featuresPage");
-            /*$("#sidebar").addClass("featuresSidePage");*/
 
 		}else if(resultSugestoes == true){
-			/*botaoSugestoes.style.background = 'rgb(95 60 92)';
+			botaoSugestoes.style.background = 'rgb(95 60 92)';
 			botaoSugestoes.style.border = '1px solid #555';
-			botaoSugestoes.style.boxShadow = 'inset 3px 2px 2px #323232';*/
+			botaoSugestoes.style.boxShadow = 'inset 3px 2px 2px #323232';
 			botaoSugestoes.style.color = '#AAA';
 			botaoSugestoes.style.textDecoration = 'none';
 			botaoSugestoes.style.textShadow = '#d6c6d5';
@@ -122,30 +101,7 @@ $(window).on("load",function (){
 			botaoSugestoesSidebar.style.background = 'rgb(95 60 92 / 50%)';
 			iconeSugestoesSidebar.style.color = '#daa520';
 			iconeSugestoesSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
-			$("#menu").addClass("sugestoesPage");
-            /*$("#sidebar").addClass("sugestoesSidePage");*/
 
 		}
 	});
 
-	 jQuery(function ($) {
-
-      $("#show-sidebar").click(function() {
-        $(".page-wrapper").addClass("toggled");
-        $('#sidebar').css('transition','all 250ms linear');
-        $('#sidebar').css('display','block');
-        $('#show-sidebar').css('display','none');
-        $('#bannerKonvivaFundo').css('display','none');
-        $('#imagemIlogSidebarMenu').css('transition','all 1000ms linear');
-        $('#imagemIlogSidebarMenu').css('display','block');
-      });
-      $("#close-sidebar").click(function() {
-        $(".page-wrapper").removeClass("toggled");
-        $('#show-sidebar').css('display','block');
-        $('#bannerKonvivaFundo').css('display','block');
-        $('#imagemIlogSidebarMenu').css('transition','all 10ms linear');
-        $('#imagemIlogSidebarMenu').css('display','none');
-      });
-
-
-    });

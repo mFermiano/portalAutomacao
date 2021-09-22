@@ -1,36 +1,4 @@
 $(function(){
-	$('#ambientes').on('click', function(){
-		var select = document.querySelector('select');
-        var option = select.children[select.selectedIndex];
-        var texto = option.textContent;
-
-        console.log(texto);
-		if(texto=='Digitar ambiente'){
-			document.getElementById("setUrl").disabled = false;
-		}else{
-		document.getElementById("setUrl").disabled = true;
-		}
-	});
-});
-
-$(function(){
-	$('#usuario').on('click', function(){
-		var select2 = document.getElementById('usuario');
-        var option2 = select2.children[select2.selectedIndex];
-        var texto2 = option2.textContent;
-
-        console.log(texto2);
-		if(texto2=='Digitar login e senha'){
-			document.getElementById("setLogin").disabled = false;
-			document.getElementById("setPassword").disabled = false;
-		}else{
-		document.getElementById("setLogin").disabled = true;
-		document.getElementById("setPassword").disabled = true;
-		}
-	});
-});
-
-$(function(){
 
 	$('#features').on('change', function(){
 		let campo = $($(this).val());
@@ -111,7 +79,7 @@ $(function(){
 $("#botaoExecutar").click(function() {
 
 	window.scroll({
-		top:1100,
+		top:800,
 		behavior:"smooth",
 	});
 
@@ -119,31 +87,3 @@ $("#botaoExecutar").click(function() {
             scrollTop: $("#videosSection").offset().top
         }, 500);*/
     });
-
-    function move() {
-       var elem = document.getElementById("myBar");
-       var width = 10;
-       var id = setInterval(frame, 440);
-       var botaoRelatorio = document.getElementById("gerarRelatorio");
-       console.log(botaoRelatorio);
-       function frame() {
-         if (width >= 100) {
-           clearInterval(id);
-           $('#gerarRelatorio').css('display','block');
-           window.scroll({
-             top:1150,
-             behavior:"smooth",
-           });
-
-           /*$([document.documentElement, document.body]).animate({
-               scrollTop: $("#gerarRelatorio").offset().top
-             }, 500);*/
-
-           } else {
-             $('#gerarRelatorio').css('display','none');
-             width++;
-             elem.style.width = width + '%';
-             document.getElementById("label").innerHTML = width * 1  + '%';
-           }
-         }
-       };
