@@ -82,14 +82,13 @@ div.global{
 
 			button[type='submit']{
 			width:10rem;
-            height:3rem;
+            height:2rem;
             	text-decoration: none;
             	transition: all .2s;
             	position: relative;
             	background: rgb(128 1 134);
             	border-radius: 2rem;
             	box-shadow: 3px 2px 2px #555;
-            	padding: 0.8rem;
             	font-family: "OpenSans";
             	color: rgb(245, 245, 245,0.9);
                 cursor: pointer;
