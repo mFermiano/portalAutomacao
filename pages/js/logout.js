@@ -5,7 +5,7 @@ $(function(){
 	});
 });
 $(function(){
-	$('#tituloDireita').on('click', function(){
+	$('#logoutMenu').on('click', function(){
 		window.top.close();
         window.open("../index.html");
 	});
