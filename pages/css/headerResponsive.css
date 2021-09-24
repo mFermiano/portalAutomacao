@@ -1,0 +1,55 @@
+@media only screen and (max-width: 768px){
+header #menu {
+    display: none;
+}
+header{
+height:4.9rem;
+}
+#containerTitulo{
+display:none;
+}
+.page-wrapper{
+display:block;
+}
+#bannerKonvivaFundo img{
+width:41%;
+}
+#bannerKonvivaFundo{
+width:85%;
+filter:opacity(0.45);
+transition:all 80ms linear;
+}
+.sidebar-wrapper{
+display: none;
+    transition: all 250ms linear 0s;
+    justify-content: flex-start;
+    align-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap
+    }
+#show-sidebar{
+display: block;
+}
+.menuEstilizado{
+display:none;
+}
+.botaoMenu{
+display:none;
+}
+.botaoMenu a{
+display:none;
+}
+nav#sidebar {
+        width: 17rem;
+}
+img#imagemIlogSidebarMenu {
+    height: 3.1rem;
+}
+.sidebar-menu-bottom {
+    bottom: 1rem;
+    left: 2rem;
+    position: fixed;
+    height: 5rem;
+}
+}
