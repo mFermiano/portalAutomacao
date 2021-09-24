@@ -184,3 +184,15 @@ header #menu .fa{
   top: 0px;
   background-color: #ccf;
 }
+
+a#logoutMenu {
+    color: #f0d12f;
+    text-decoration: underline;
+}
+li#logoutSidebar {
+    /* position: fixed; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    top: 3rem;
+    position: relative;
+}

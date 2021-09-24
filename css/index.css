@@ -25,12 +25,11 @@ margin:0rem;
 }
 
 .content .container {
-        padding: 2rem;
-        background-color: #f9f9f9;
-        width: 25%;
-        height: 16rem;
-        border-radius: 2rem;
-
+          padding: 2rem;
+          background-color: #f9f9f9;
+          width: 16rem;
+          height: 16rem;
+          border-radius: 2rem;
 }
 
 .content .container .login-image {
@@ -74,10 +73,10 @@ div.global{
 			margin-right: auto;
 }
 			input[type='text'], input[type='password']{
-			width: 300px;
-			height: 25px;
+			width: 16rem;
+                height: 1.7rem;
 			border: solid 1px #606060;
-
+                padding: 0 0.5rem 0 0.5rem;
 			}
 
 			button[type='submit']{
@@ -110,3 +109,8 @@ div.global{
                 border-radius: 1rem;
 			}
 
+            input:focus {
+                box-shadow: 0 0 0 0;
+                outline: 0;
+
+            }
