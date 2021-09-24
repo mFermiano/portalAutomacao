@@ -104,6 +104,12 @@ select {
     width: 29rem;
 }
 
+select:focus {
+                box-shadow: 0 0 0 0;
+                outline: 0;
+
+            }
+
 label {
 display: inline-block;
     max-width: 100%;
