@@ -130,6 +130,7 @@ $("#botaoExecutar").click(function() {
     function move() {
        var elem = document.getElementById("myBar");
        var elem2 = document.getElementById("myBar2");
+        var elem3 = document.getElementById("myBar3");
        var width = 10;
        var id = setInterval(frame, 440);
        var botaoRelatorio = document.getElementById("gerarRelatorio");
@@ -141,6 +142,7 @@ $("#botaoExecutar").click(function() {
            $('#gerarRelatorio').css('display','block');
            $('#aguardeRelatorio').css('display','none');
            botoes[0].click();
+           botoes[1].click();
            window.scroll({
              top:1150,
              behavior:"smooth",
@@ -155,8 +157,10 @@ $("#botaoExecutar").click(function() {
              width++;
              elem.style.width = width + '%';
              elem2.style.width = width + '%';
+             elem3.style.width = width + '%';
              document.getElementById("label").innerHTML = width * 1  + '%';
              document.getElementById("label2").innerHTML = width * 1  + '%';
+             document.getElementById("label3").innerHTML = width * 1  + '%';
            }
          }
        };

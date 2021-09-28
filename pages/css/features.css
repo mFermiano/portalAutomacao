@@ -307,10 +307,10 @@ video#iframeNavegador2 {
 }
 
 video#iframeNavegador3 {
-    width: 85%;
+    width: 80%;
 }
 video#iframeNavegador4 {
-    width: 50.2%;
+    width: 85%;
 }
 
 section #containerVideo2{
@@ -371,6 +371,30 @@ position: relative;
 }
 
 #label2 {
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
+
+#myProgress3 {
+position: relative;
+    width: 80.5%;
+    left: 11rem;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 32rem;
+    margin-top: 0.5rem;
+}
+
+#myBar3 {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background-color: #4CAF50;
+	border-radius: 32rem;
+}
+
+#label3 {
 	text-align: center;
 	line-height: 30px;
 	color: white;
