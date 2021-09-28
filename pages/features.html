@@ -232,7 +232,8 @@
                         </fieldset>
                     </div>
 
-                    <div id="containerBotaoExecutar" class="container col-xs-12">
+                    <div id="containerBotaoExecutar" class="container col-xs-12" data-toggle="modal"
+                         data-target="#modalVideo1">
                         <button title="Executar feature selecionada" id="botaoExecutar" onclick="move()"
                                 class="btn botaoFeature col-xs-12"
                                 data-video="vid/Konvivahd.mp4">EXECUTAR<i class="fa fa-rocket"></i></button>
@@ -248,20 +249,42 @@
 <section id="videosSection" class="col-xs-12 text-center">
 
     <div id="containerVideo" class="container col-xs-6 text-center">
-        <strong>Console em execução</strong>
+        <strong>Feature escolhida em execução</strong>
         <hr>
         <div id="video" class="row text-center col-xs-12">
 
-            <video id="iframeNavegador" src="vid/console.mp4" poster="img/newskonviva.png" muted></video>
+            <video id="iframeNavegador" src="vid/feature.mp4" poster="img/newskonviva.png" data-toggle="modal" data-target="#modalVideo1" muted></video>
+            <video id="iframeNavegador2" src="vid/console.mp4" poster="img/newskonviva.png" data-toggle="modal" data-target="#modalVideo1" muted></video>
 
         </div>
+
         <div id="myProgress" class="col-xs-12">
             <div id="myBar">
                 <div id="label">0%</div>
             </div>
         </div>
 
-        <strong id="aguardeRelatorio" class="alert alert-info col-xs-12 text-center" role="alert">Relatório será gerado
+        <div id="modalVideo1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+             aria-labelledby="myLargeModalLabel"
+             aria-hidden="true" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true" title="Fechar">&times;</span>
+                    </button>
+                    <div id="video2" class="row text-center col-xs-12">
+                        <video id="iframeNavegador3" class="simulacao" src="vid/feature.mp4"></video>
+                    </div>
+                    <div id="myProgress2" class="col-xs-12">
+                        <div id="myBar2">
+                            <div id="label2">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <strong id="aguardeRelatorio" class="alert alert-info col-xs-8 text-center" role="alert">Relatório será gerado
             ao final da execução.<br>Por favor aguarde...</strong>
 
         <button id="gerarRelatorio" class="btn col-xs-12">

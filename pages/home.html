@@ -158,14 +158,27 @@
         <i id="videoIcon" class="fa fa-video-camera text-left" aria-hidden="true"></i>
         <strong class="text-left">Neste vídeo, você têm uma pequena amostra:</strong>
         <hr>
-        <div id="video" class="row text-center col-xs-12">
-            <video src="vid/simulacao.mp4" poster="img/CUCUMBER_BLACK.png" controls></video>
+        <div class="container videoTrigger">
+            <img class="col-xs-8" src="img/robobanner.jpg">
+            <img id="trigger1" class="col-xs-1" title="Abrir vídeo" src="img/playIconVideo.png" data-toggle="modal"
+                 data-target="#modalVideo1">
+        </div>
+        <div id="modalVideo1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+             aria-labelledby="myLargeModalLabel"
+             aria-hidden="true" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true" title="Fechar">&times;</span>
+                    </button>
+                    <div id="video1" class="row text-center col-xs-12">
+                        <video class="simulacao" src="vid/simulacao.mp4" controls></video>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
     </div>
-
-
     </div>
 </section>
 
@@ -304,9 +317,26 @@
         <div id="containerVideo" class="container col-xs-12 text-center">
             <strong>Conheça um pouco mais também nesse vídeo:</strong>
 
-            <div id="video2" class="row text-center col-xs-12">
-                <video src="vid/Konvivahd.mp4" controls poster="img/newskonviva.png"></video>
+            <div class="container videoTrigger">
+                <img class="col-xs-8" src="img/newskonviva.png">
+                <img id="trigger2" class="col-xs-1" title="Abrir vídeo" src="img/playIconVideo.png" data-toggle="modal"
+                     data-target="#modalVideo2">
             </div>
+            <div id="modalVideo2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                 aria-labelledby="myLargeModalLabel"
+                 aria-hidden="true" data-keyboard="false" data-backdrop="static">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true" title="Fechar">&times;</span>
+                        </button>
+                        <div id="video2" class="row text-center col-xs-12">
+                            <video class="simulacao" src="vid/Konvivahd.mp4" controls></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
@@ -456,5 +486,6 @@
 <script src="js/efeitosMenuEScroll.js"></script>
 <script src="js/carrosel.js"></script>
 <script src="js/logout.js"></script>
+<script src="js/efeitosModalVideo.js"></script>
 </body>
 </html>

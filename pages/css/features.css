@@ -42,6 +42,11 @@ strong.col-xs-12.text-center {
 	font-size: 2rem;
 	font-weight: bolder;
 }
+strong.col-xs-8.text-center {
+	color: rgb(138 94 134);
+	font-size: 2rem;
+	font-weight: bolder;
+}
 
 /* SECTION */
 
@@ -272,13 +277,40 @@ section #containerVideo{
 }
 
 section #video{
-
-	position: relative;
-	margin: 0rem;
-	margin-top: 5rem;
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+
+section #video2{
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 section video {
 	width: 100%;
+}
+
+video {
+    margin: 1rem;
+}
+video#iframeNavegador {
+    width: 79.5%;
+}
+video#iframeNavegador2 {
+    width: 85.3%;
+}
+
+video#iframeNavegador3 {
+    width: 85%;
+}
+video#iframeNavegador4 {
+    width: 50.2%;
 }
 
 section #containerVideo2{
@@ -291,7 +323,7 @@ section #video2{
 
 	position: relative;
 	margin: 0rem;
-	margin-top: 4rem;
+
 }
 section video2 {
 	width: 100%;
@@ -303,7 +335,7 @@ section video2 {
 	height: 30px;
 	background-color: #ddd;
 	border-radius: 32rem;
-	margin-top: 2rem;
+	margin-top: 0.5rem;
 }
 
 #myBar {
@@ -319,6 +351,62 @@ section video2 {
 	line-height: 30px;
 	color: white;
 }
+
+#myProgress2 {
+position: relative;
+    width: 80.5%;
+    left: 11rem;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 32rem;
+    margin-top: 0.5rem;
+}
+
+#myBar2 {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background-color: #4CAF50;
+	border-radius: 32rem;
+}
+
+#label2 {
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    width: 86%;
+    transform: translate(0,0);
+}
+
+span {
+    color: whitesmoke;
+}
+
+.simulacao {
+width: 100%;
+}
+
+.col-xs-1 {
+    top: -22rem;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.col-xs-1:hover {
+    opacity: 1;
+}
+
 
 strong#aguardeRelatorio {
     top: 3rem;

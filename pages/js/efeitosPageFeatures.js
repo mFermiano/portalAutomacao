@@ -84,8 +84,14 @@ $(function(){
 
 	$("#botaoExecutar").on("click", function(){
 		var video = $("video")[0];
+		var video2 = $("video")[1];
+		var video3 = $("video")[2];
+		var video4 = $("video")[3];
 		if ($(this).hasClass("botaoFeature")) {
 			video.play();
+			video2.play();
+			video3.play();
+			video4.play();
 		}
 	});
 });
@@ -123,15 +129,18 @@ $("#botaoExecutar").click(function() {
 
     function move() {
        var elem = document.getElementById("myBar");
+       var elem2 = document.getElementById("myBar2");
        var width = 10;
        var id = setInterval(frame, 440);
        var botaoRelatorio = document.getElementById("gerarRelatorio");
+       var botoes = document.getElementsByClassName("close");
        console.log(botaoRelatorio);
        function frame() {
          if (width >= 100) {
            clearInterval(id);
            $('#gerarRelatorio').css('display','block');
            $('#aguardeRelatorio').css('display','none');
+           botoes[0].click();
            window.scroll({
              top:1150,
              behavior:"smooth",
@@ -145,7 +154,29 @@ $("#botaoExecutar").click(function() {
              $('#gerarRelatorio').css('display','none');
              width++;
              elem.style.width = width + '%';
+             elem2.style.width = width + '%';
              document.getElementById("label").innerHTML = width * 1  + '%';
+             document.getElementById("label2").innerHTML = width * 1  + '%';
            }
          }
        };
+
+       $(function(){
+                document.onkeydown = function(evt) {
+                   evt = evt || window.event;
+                   var isEscape = false;
+                   var botoes = document.getElementsByClassName("close");
+                   console.log(botoes);
+                   if ("key" in evt) {
+                       isEscape = (evt.key === "Escape" || evt.key === "Esc");
+                   } else {
+                       isEscape = (evt.keyCode === 27);
+                   }
+                   if (isEscape) {
+                       botoes[0].click();
+                       botoes[1].click();
+                   }
+           };
+           });
+
+

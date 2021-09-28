@@ -111,10 +111,40 @@ section#videoSection #video{
 	margin-top: 6rem;
 }
 section#videoSection video {
-	width: 50%;
+	width: 100%;
 }
 
+.modal-content {
+    border: none;
+}
 
+span {
+    color: whitesmoke;
+}
+div#video2, div#video1 {
+    margin-top: 2rem;
+}
+
+div.videoTrigger {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.simulacao {
+width: 100%;
+}
+
+.col-xs-1 {
+    top: -22rem;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.col-xs-1:hover {
+    opacity: 1;
+}
 
 strong.col-xs-12.text-center {
 	color: rgb(138 94 134);
@@ -128,6 +158,7 @@ section#tecnologiasSection {
 
 	position: relative;
 	margin-bottom: 13rem;
+	margin-top: 10rem;
 }
 
 #containerTecnologias{
@@ -194,4 +225,11 @@ section .owl-theme .owl-nav.disabled+.owl-dots {
 	margin-top: 1rem;
 }
 
+section #containerSection {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 1rem;
+}
 
