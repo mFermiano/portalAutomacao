@@ -301,9 +301,11 @@ video {
 }
 video#iframeNavegador {
     width: 79.5%;
+    cursor: pointer;
 }
 video#iframeNavegador2 {
     width: 85.3%;
+    cursor: pointer;
 }
 
 video#iframeNavegador3 {

@@ -42,6 +42,7 @@ $(function(){
 		if(campo){
 			campo.css('display', 'block');
 			campo.attr('disabled', false);
+
 		}
 	});
 });
@@ -61,13 +62,20 @@ $(function(){
 $(function(){
 	$('#botaoExecutar').css('display', 'none');
 	$('#features').on('change', function(){
+	var video1 = $("video")[0];
+    var video2 = $("video")[1];
+    var video3 = $("video")[2];
+    var video4 = $("video")[3];
 		let campo = $($(this).val());
 		if(campo){
 			$('#botaoExecutar').css('display', 'block');
 			/*$('.form').css('transition', 'all 50ms linear');
 			$('.form').css('padding-top', '2rem');*/
 			document.getElementById("botaoExecutar").disabled = false;
-
+			video1.pause();
+            video2.pause();
+            video3.pause();
+            video4.pause();
 		}
 	});
 });
