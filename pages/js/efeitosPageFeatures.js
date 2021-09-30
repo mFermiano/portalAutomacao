@@ -83,6 +83,8 @@ $(function(){
         $('#botaoExecutar').css('display','none');
 		$('#aguardeRelatorio').css('display','block');
 		$('#execucaoInterrompida').css('display','none');
+		document.getElementById("features").disabled = true;
+		document.getElementById("modulos").disabled = true;
 
 		window.scroll({
 			top:1100,
@@ -110,6 +112,8 @@ $(function(){
 		document.getElementById("botaoExecutar").disabled = false;
 		$('#aguardeRelatorio').css('display','none');
 		$('#execucaoInterrompida').css('display','block');
+		document.getElementById("features").disabled = false;
+		document.getElementById("modulos").disabled = false;
 
 		var video = $("video")[0];
 		var video2 = $("video")[1];
@@ -175,6 +179,8 @@ function move() {
 			$('#aguardeRelatorio').css('display','none');
 			$('#botaoExecutar').css('display','block');
 			document.getElementById("botaoExecutar").disabled = false;
+			document.getElementById("features").disabled = false;
+			document.getElementById("modulos").disabled = false;
 			$('#botaoParar').css('display','none');
 			botoes[0].click();
 			botoes[1].click();
