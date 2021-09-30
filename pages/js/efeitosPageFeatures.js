@@ -4,7 +4,6 @@ $(function(){
 		var option = select.children[select.selectedIndex];
 		var texto = option.textContent;
 
-		console.log(texto);
 		if(texto=='Digitar ambiente'){
 			document.getElementById("setUrl").disabled = false;
 		}else{
@@ -46,6 +45,8 @@ $(function(){
 	$('#botaoExecutar').css('display', 'none');
 	$('#features').on('change', function(){
 		$('#aguardeRelatorio').css('display','none');
+		$('#execucaoInterrompida').css('display','none');
+		$('#botaoParar').css('display','none');
 		$('.fieldset').css('display', 'none');
 		$('.fieldset').attr('disabled', false);
 		$('#gerarRelatorio').css('display','none');
@@ -78,8 +79,10 @@ $(function(){
 $(function(){
 
 	$("#botaoExecutar").on("click", function(){
-		document.getElementById("botaoExecutar").disabled = true;
+		$('#botaoParar').css('display','block');
+        $('#botaoExecutar').css('display','none');
 		$('#aguardeRelatorio').css('display','block');
+		$('#execucaoInterrompida').css('display','none');
 
 		window.scroll({
 			top:1100,
@@ -95,6 +98,38 @@ $(function(){
 			video2.play();
 			video3.play();
 			video4.play();
+		}
+	});
+});
+
+$(function(){
+
+	$("#botaoParar").on("click", function(){
+		$('#botaoParar').css('display','none');
+		$('#botaoExecutar').css('display','block');
+		document.getElementById("botaoExecutar").disabled = false;
+		$('#aguardeRelatorio').css('display','none');
+		$('#execucaoInterrompida').css('display','block');
+
+		var video = $("video")[0];
+		var video2 = $("video")[1];
+		var video3 = $("video")[2];
+		var video4 = $("video")[3];
+
+		window.scroll({
+            top:1100,
+            behavior:"smooth",
+        });
+
+		if ($(this).hasClass("botaoParar")) {
+			video.pause();
+			video2.pause();
+			video3.pause();
+			video4.pause();
+			video.currentTime = 0;
+            video2.currentTime = 0;
+            video3.currentTime = 0;
+            video4.currentTime = 0;
 		}
 	});
 });
@@ -122,16 +157,25 @@ function move() {
 	var elem = document.getElementById("myBar");
 	var elem2 = document.getElementById("myBar2");
 	var elem3 = document.getElementById("myBar3");
+
+	var video = $("video")[0];
+    var video2 = $("video")[1];
+    var video3 = $("video")[2];
+    var video4 = $("video")[3];
+
 	var width = 10;
 	var id = setInterval(frame, 440);
 	var botaoRelatorio = document.getElementById("gerarRelatorio");
 	var botoes = document.getElementsByClassName("close");
-	console.log(botaoRelatorio);
+
 	function frame() {
 		if (width >= 100) {
 			clearInterval(id);
 			$('#gerarRelatorio').css('display','block');
 			$('#aguardeRelatorio').css('display','none');
+			$('#botaoExecutar').css('display','block');
+			document.getElementById("botaoExecutar").disabled = false;
+			$('#botaoParar').css('display','none');
 			botoes[0].click();
 			botoes[1].click();
 			window.scroll({
@@ -148,17 +192,41 @@ function move() {
        	document.getElementById("label").innerHTML = width * 1  + '%';
        	document.getElementById("label2").innerHTML = width * 1  + '%';
        	document.getElementById("label3").innerHTML = width * 1  + '%';
-       	$('#features').on('change', function(){
-       		window.clearTimeout(id);
-       		document.getElementById("label").innerHTML = 0  + '%';
-       		document.getElementById("label2").innerHTML =0  + '%';
-       		document.getElementById("label3").innerHTML = 0  + '%';
-       		$('#myBar').css('width','0%');
-       		$('#myBar2').css('width','0%');
-       		$('#myBar3').css('width','0%');
-       	});
        }
    }
+   $('#features').on("change", function(){
+       window.clearTimeout(id);
+       document.getElementById("label").innerHTML = 0  + '%';
+       document.getElementById("label2").innerHTML = 0  + '%';
+       document.getElementById("label3").innerHTML = 0  + '%';
+       $('#myBar').css('width','0%');
+       $('#myBar2').css('width','0%');
+       $('#myBar3').css('width','0%');
+   });
+   $("#botaoParar").on("click", function(){
+       window.clearTimeout(id);
+       document.getElementById("label").innerHTML = width + '%';
+       document.getElementById("label2").innerHTML = width + '%';
+       document.getElementById("label3").innerHTML = width + '%';
+       $('#myBar').css('width',width+'%');
+       $('#myBar2').css('width',width+'%');
+       $('#myBar3').css('width',width+'%');
+   });
+   $("#botaoExecutar").on("click", function(){
+       width++;
+       elem.style.width = width + '%';
+       elem2.style.width = width + '%';
+       elem3.style.width = width + '%';
+       document.getElementById("label").innerHTML = width * 1  + '%';
+       document.getElementById("label2").innerHTML = width * 1  + '%';
+       document.getElementById("label3").innerHTML = width * 1  + '%';
+
+       video.currentTime = 0;
+       video2.currentTime = 0;
+       video3.currentTime = 0;
+       video4.currentTime = 0;
+
+   });
 };
 
 $(function(){

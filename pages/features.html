@@ -239,6 +239,11 @@
                                 data-video="vid/Konvivahd.mp4">EXECUTAR<i class="fa fa-rocket"></i></button>
                     </div>
 
+                    <div id="containerBotaoParar" class="container col-xs-12">
+                        <button title="Parar a execução da feature selecionada" id="botaoParar"
+                                class="btn botaoParar col-xs-12">PARAR EXECUÇÃO<i class="fa fa-stop-circle"></i></button>
+                    </div>
+
                 </div>
             </div>
 
@@ -304,8 +309,10 @@
             </div>
         </div>
 
-        <strong id="aguardeRelatorio" class="alert alert-danger col-xs-8 text-center" role="alert">Relatório será gerado
-            ao final da execução.<br>Por favor aguarde...</strong>
+        <strong id="aguardeRelatorio" class="alert alert-success col-xs-12 text-center" role="alert">Relatório será gerado
+            ao final da execução.<br>Por favor aguarde...<br>Se preferir, você pode interromper a execução clicando no botão "PARAR EXECUÇÃO"</strong>
+
+        <strong id="execucaoInterrompida" class="alert alert-danger col-xs-12 text-center" role="alert">Execução interrompida!!!<br>Por favor, clique novamente em "EXECUTAR" para executar a mesma feature<br>ou escolha nova feature e clique em "EXECUTAR"</strong>
 
         <button id="gerarRelatorio" class="btn col-xs-12">
             <a title="Gerar relatório" href="img/RELATORIO_FEATURE_CadastrarUmCargo.xlsx" download>GERAR RELATÓRIO <i

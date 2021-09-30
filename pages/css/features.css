@@ -145,7 +145,7 @@ label#loginLabel {
 }
 
 input#setLogin {
-    width: 70%;
+    width: 78%;
     margin-left: 1rem;
 }
 
@@ -154,14 +154,26 @@ label#passwordLabel {
 }
 
 input#setPassword {
-    width: 21.6rem;
+    width: 24.2rem;
     margin-left: 0.7rem;
 }
+
+input {
+border-radius: 2rem;
+border: solid 1px #606060;
+            padding: 0 0.5rem 0 0.5rem;
+}
+
+input:focus {
+			box-shadow: 0 0 0 0;
+			outline: 0;
+			font-weight: normal;
+}
+
 .form {
 	max-width: 600px;
 	margin: auto;
 	padding-top: 4rem;
-
 }
 
 .fieldset {
@@ -171,7 +183,6 @@ input#setPassword {
 
 #fieldsets {
 display: block;
-    /* max-width: 655px; */
     height: 50rem;
     margin: 5rem;
     padding: 2rem;
@@ -189,7 +200,13 @@ div#containerBotaoExecutar {
         width: 50%;
         left: 31%;
         bottom: 1rem;
+}
 
+div#containerBotaoParar {
+	    position: relative;
+        width: 50%;
+        right: 19%;
+        bottom: 1rem;
 }
 
 section .botaoFeature{
@@ -217,7 +234,37 @@ section .botaoFeature:hover{
 	transition: all 250ms linear;
 }
 
+section .botaoParar{
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .2s;
+	position: relative;
+	background: rgba(229, 1, 2, 0.9);
+	border-radius: 2rem;
+	box-shadow: 3px 2px 2px #555;
+	padding: 0.8rem;
+	font-family: "OpenSans";
+	color: rgb(245, 245, 245,0.9);
+	width: 70%;
+	font-size: 1.01rem;
+    display: none;
+}
+
+section .botaoParar:hover{
+	background: rgb(167 34 35 / 90%);
+	border: 1px solid #555;
+	box-shadow: inset 3px 2px 2px #323232;
+	color: #AAA;
+	text-decoration: none;
+	text-shadow: #d6c6d5;
+	transition: all 250ms linear;
+}
+
 section .botaoFeature i{
+	margin-left: 10px;
+}
+
+section .botaoParar i{
 	margin-left: 10px;
 }
 
@@ -438,8 +485,15 @@ width: 100%;
 strong#aguardeRelatorio {
     top: 3rem;
     font-size: 1.5rem;
-    border-radius: 4rem;
     display: none;
+    padding: 2rem;
+}
+
+strong#execucaoInterrompida {
+    top: 3rem;
+    font-size: 1.5rem;
+    display: none;
+    padding: 2rem;
 }
 
 button#gerarRelatorio {
