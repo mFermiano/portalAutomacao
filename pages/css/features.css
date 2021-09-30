@@ -107,6 +107,7 @@ section #selectFeatureSection{
 select {
     border-radius: 2rem;
     width: 29rem;
+    padding-left: 0.2rem;
 }
 
 select:focus {
