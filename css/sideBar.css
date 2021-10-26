@@ -133,7 +133,7 @@ i.fa.fa-times {
   margin-top: 1rem;
 }
 
-.sidebar-wrapper .sidebar-menu .header-menu span {
+.sidebar-wrapper .sidebar-menu .header-menu #cadastreSe {
   font-weight: bold;
   font-size: 14px;
   padding: 15px 20px 5px 20px;
@@ -209,8 +209,8 @@ li.sidebar-dropdown :hover {
   font-size: 8px;
 }
 
-.sidebar-wrapper .sidebar-menu ul li a span.label,
-.sidebar-wrapper .sidebar-menu ul li a span.badge {
+.sidebar-wrapper .sidebar-menu ul li a #cadastreSe.label,
+.sidebar-wrapper .sidebar-menu ul li a #cadastreSe.badge {
   float: right;
   margin-top: 8px;
   margin-left: 5px;
@@ -293,7 +293,7 @@ i.fa.fa-bars {
 
 .chiller-theme .sidebar-wrapper ul li:hover a i,
 .chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
-.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
+.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+#cadastreSe,
 .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
   color: #daa520;
   text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
@@ -306,7 +306,7 @@ i.fa.fa-bars {
   background: #3a3f48;
 }
 
-.chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
+.chiller-theme .sidebar-wrapper .sidebar-menu .header-menu #cadastreSe {
   color: #6c7b88;
 }
 
@@ -329,7 +329,7 @@ i.fa.fa-times, .sidebar-dropdown .fa {
   color: whitesmoke;
 }
 
-.sidebar-dropdown span {
+.sidebar-dropdown #cadastreSe {
   color: whitesmoke;
 }
 
