@@ -7,18 +7,22 @@ $(window).scroll(function() {
         $('header').css('height','4.9rem');
         $('#containerTitulo').css('display','none');
         $('.page-wrapper').css('display','block');
-        $('#bannerKonvivaFundo img').css('width','18%');
+        $('#bannerKonvivaFundo img').css('width','16%');
+        $('#bannerKonvivaFundo img').attr('src','img/logoZolyBranco.png');
+        $('#bannerKonvivaFundo').css('top','-0.2rem');
         $('#bannerKonvivaFundo').css('width','85%');
         $('#bannerKonvivaFundo').css('filter','opacity(0.45)');
-        $('#bannerKonvivaFundo').css('transition','all 80ms linear');
+        /*('#bannerKonvivaFundo').css('transition','all 80ms linear');*/
         $('.sidebar-wrapper').css('display','none');
         $('#show-sidebar').css('display','block');
 
     } else if (scroll < 50){
         $('#menu').css('display','block');
         $('header').css('height','10.4rem');
-        $('#bannerKonvivaFundo img').css('width','40%');
+        $('#bannerKonvivaFundo img').css('width','27%');
+        $('#bannerKonvivaFundo img').attr('src','img/logoMutant.png');
         $('#bannerKonvivaFundo').css('filter','opacity(0.15)');
+        $('#bannerKonvivaFundo').css('top','0.5rem');
         $('#bannerKonvivaFundo').css('width','100%');
         $('#bannerKonvivaFundo').css('display','block');
         $('#containerTitulo').css('display','block');
@@ -79,7 +83,7 @@ $(window).on("load",function (){
 			botaoHome.style.color = '#AAA';
 			botaoHome.style.textDecoration = 'none';
 			botaoHome.style.fontSize = '1.1rem';
-			botaoHomeSidebar.style.background = 'rgb(95 60 92 / 50%)';
+			botaoHomeSidebar.style.background = 'rgb(60 60 60 / 70%)';
 			iconeHomeSidebar.style.color = '#daa520';
 			iconeHomeSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
 			$("#menu").addClass("homePage");
@@ -92,7 +96,7 @@ $(window).on("load",function (){
 			botaoInstrucoes.style.textDecoration = 'none';
 			botaoInstrucoes.style.textShadow = '#d6c6d5';
 			botaoInstrucoes.style.fontSize = '1.1rem';
-			botaoInstrucoesSidebar.style.background = 'rgb(95 60 92 / 50%)';
+			botaoInstrucoesSidebar.style.background = 'rgb(60 60 60 / 70%)';
 			iconeInstrucoesSidebar.style.color = '#daa520';
 			iconeInstrucoesSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
 			$("#menu").addClass("instrucoesPage");
@@ -105,7 +109,7 @@ $(window).on("load",function (){
 			botaoFeatures.style.textDecoration = 'none';
 			botaoFeatures.style.textShadow = '#d6c6d5';
 			botaoFeatures.style.fontSize = '1.1rem';
-			botaoFeaturesSidebar.style.background = 'rgb(95 60 92 / 50%)';
+			botaoFeaturesSidebar.style.background = 'rgb(60 60 60 / 70%)';
 			iconeFeaturesSidebar.style.color = '#daa520';
 			iconeFeaturesSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
 			$("#menu").addClass("featuresPage");
@@ -119,7 +123,7 @@ $(window).on("load",function (){
 			botaoSugestoes.style.textDecoration = 'none';
 			botaoSugestoes.style.textShadow = '#d6c6d5';
 			botaoSugestoes.style.fontSize = '1.1rem';
-			botaoSugestoesSidebar.style.background = 'rgb(95 60 92 / 50%)';
+			botaoSugestoesSidebar.style.background = 'rgb(60 60 60 / 70%)';
 			iconeSugestoesSidebar.style.color = '#daa520';
 			iconeSugestoesSidebar.style.textShadow = '0px 0px 10px rgba(22, 199, 255, 0.5)';
 			$("#menu").addClass("sugestoesPage");

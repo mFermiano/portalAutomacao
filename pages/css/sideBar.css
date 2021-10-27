@@ -165,7 +165,7 @@ i.fa.fa-times {
 }
 
 li.sidebar-dropdown :hover {
-  background: rgb(95, 60, 92);
+  background: rgb(30 30 30/50%);
 }
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {

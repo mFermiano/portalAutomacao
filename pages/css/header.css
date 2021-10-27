@@ -38,7 +38,7 @@ header #containerTitulo {
 }
 
 #bannerKonvivaFundo img {
- width: 40%;
+ width: 27%;
 }
 
 img#imagemIlog {
@@ -70,7 +70,7 @@ width: 100%;
     color: #BDC3C7;
     object-position: bottom;
     padding: 0rem;
-    background: #6b4a6880;
+    background: rgb(51 51 51 / 72%);
 
 }
 
